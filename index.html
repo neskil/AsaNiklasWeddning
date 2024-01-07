@@ -19,81 +19,101 @@
 
 					<!-- Logo -->
 						<div id="logo">
-							<h1><a href="index.html" id="CursiveFont">Bröllop</a></h1>
-							<p>Åsa och Niklas Gifter sig</p>
+							<h1><a href="index.html">Vi ska gifta oss!</a></h1>
+							<p>Välkomna till Åsa och Niklas bröllop!</p>
 						</div>
 
 					<!-- Nav -->
 						<nav id="nav">
 							<ul>
-								<li class="current"><a href="index.html">Home</a></li>
-								<li>
-									<a href="#">Dropdown</a>
-									<ul>
-										<li><a href="#">Lorem ipsum</a></li>
-										<li><a href="#">Magna veroeros</a></li>
-										<li><a href="#">Etiam nisl</a></li>
-										<li>
-											<a href="#">Sed consequat</a>
-											<ul>
-												<li><a href="#">Lorem dolor</a></li>
-												<li><a href="#">Amet consequat</a></li>
-												<li><a href="#">Magna phasellus</a></li>
-												<li><a href="#">Etiam nisl</a></li>
-												<li><a href="#">Sed feugiat</a></li>
-											</ul>
-										</li>
-										<li><a href="#">Nisl tempus</a></li>
-									</ul>
-								</li>
-								<li><a href="left-sidebar.html">Left Sidebar</a></li>
+								<li class="current"><a href="index.html">Startsida</a></li>
 								<li><a href="right-sidebar.html">Right Sidebar</a></li>
-								<li><a href="no-sidebar.html">No Sidebar</a></li>
+								<li><a href="no-sidebar.html">OSA</a></li>
 							</ul>
 						</nav>
 
 				</section>
 
 			<!-- Intro -->
+            
 				<section id="intro" class="wrapper style1">
-					<div class="title">The Introduction</div>
+					<div class="title">THE FINAL COUNTDOWN</div>
+                    <div class="container">
+                    <!-- Image -->
+							<a href="#" class="image"> 
+								<img src="images/bg1.jpg" alt="" style="height: 350px" id="ImgCenter"/>
+							</a>
+                    </div>
 					<div class="container">
-						<p class="style1">So in case you were wondering what this is all about ...</p>
-						<p class="style2">
-							Escape Velocity is a free responsive<br class="mobile-hide" />
-							site template by <a href="http://html5up.net" class="nobr">HTML5 UP</a>
+						<p class="style1">Nedräkning till den stora dagen:</p>
+                        
+						<p class="style2" id="timer1">
+						timer1
 						</p>
-						<p class="style3">It's <strong>responsive</strong>, built on <strong>HTML5</strong> and <strong>CSS3</strong>, and released for
-						free under the <a href="http://html5up.net/license">Creative Commons Attribution 3.0 license</a>, so use it for any of
-						your personal or commercial projects &ndash; just be sure to credit us!</p>
+						<p class="style3">Hello and welcome!</p>
 						<ul class="actions">
-							<li><a href="#" class="button style3 large">Proceed</a></li>
+							<li><a href="#" class="button style3 large">O.S.A. via länk</a></li>
 						</ul>
 					</div>
 				</section>
+            
+                <script>
+                // Set the date we're counting down to
+                var countDownDate = new Date("May 11, 2024 14:00:00").getTime();
+
+                // Update the count down every 1 second
+                var x = setInterval(function() {
+
+                  // Get today's date and time
+                  var now = new Date().getTime();
+
+                  // Find the distance between now and the count down date
+                  var distance = countDownDate - now;
+
+                  // Time calculations for days, hours, minutes and seconds
+                  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                  // Output the result in an element with id="demo"
+                  document.getElementById("timer1").innerHTML = days + "d " + hours + "h "
+                  + minutes + "m " + seconds + "s ";
+
+                  // If the count down is over, write some text 
+                  if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("timer1").innerHTML = "Nu åker vi!";
+                  }
+                }, 1000);
+                </script>
+
 
 			<!-- Main -->
 				<section id="main" class="wrapper style2">
-					<div class="title">The Details</div>
+					<div class="title">Destination Villa Soludden</div>
 					<div class="container">
 
 						<!-- Image -->
-							<a href="#" class="image featured">
-								<img src="images/pic01.jpg" alt="" />
+							<a href="#" class="image"  id=centerCustom> 
+								<img src="images/bg2.jpg" alt="" style="height: 150px" id="ImgCenter"/>
 							</a>
 
 						<!-- Features -->
 							<section id="features">
 								<header class="style1">
-									<h2>Dolor consequat feugiat amet veroeros</h2>
+									<h2>Villa soludden</h2>
 									<p>Feugiat dolor nullam orci pretium phasellus justo</p>
 								</header>
 								<div class="feature-list">
 									<div class="row">
 										<div class="col-6 col-12-medium">
 											<section>
-												<h3 class="icon fa-comment">Mattis velit diam vulputate</h3>
-												<p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate et magna feugiat laoreet vel velit lorem.</p>
+												<h3 class="icon solid fa-map-pin">Adress</h3>
+                                                <p>VILLA SOLUDDEN<br>
+                                                   Ekviks Gårds v. 60<br>
+                                                    139 40 Värmdö<br>
+                                                   Sverige</p>
 											</section>
 										</div>
 										<div class="col-6 col-12-medium">

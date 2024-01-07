@@ -2061,7 +2061,7 @@ input, select, textarea {
 		justify-content: center;
 		position: relative;
 		height: 24em;
-		background: url("../../images/banner.jpg") center center;
+		background: url("../../images/bg1.jpg") center center;
 		background-size: cover;
 		padding: 0;
 	}
@@ -2997,5 +2997,36 @@ input, select, textarea {
 
 #CursiveFont {
     font-family: Font1;
+    
+}
+
+
+#centerCustom {
+  position: relative;
+  left: 25%;
+  object-fit: cover;
+  /*
+  Nope =(
+  margin-left: -25%;
+  margin-top: -25%;
+  */
+
+  /* 
+  Yep!
+  */
+
+  /*
+  Not even necessary really. 
+  e.g. Height could be left out!
+  */
+  width: 50%;
+
+}
+
+#ImgCenter {
+    
+object-fit: cover;
+object-position:center 80%;
+    
     
 }
