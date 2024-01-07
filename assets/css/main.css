@@ -2980,6 +2980,22 @@ input, select, textarea {
 
 						#copyright ul li:first-child {
 							margin-top: 0;
+                            
 						}
 
 	}
+
+
+
+
+/* Webfont */
+@font-face {
+    
+    font-family: Font1;
+    src: url(/assets/webfonts/font1.otf);
+}
+
+#CursiveFont {
+    font-family: Font1;
+    
+}
