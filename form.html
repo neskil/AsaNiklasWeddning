@@ -12,7 +12,38 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body class="no-sidebar is-preload">
-		<div id="page-wrapper">
+		
+                <script>
+                // Set the date we're counting down to
+                var countDownDate = new Date("Mars 20, 2024 14:00:00").getTime();
+
+                // Update the count down every 1 second
+                var x = setInterval(function() {
+
+                  // Get today's date and time
+                  var now = new Date().getTime();
+
+                  // Find the distance between now and the count down date
+                  var distance = countDownDate - now;
+
+                  // Time calculations for days, hours, minutes and seconds
+                  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                  // Output the result in an element with id="demo"
+                  document.getElementById("timer1").innerHTML = days + " dagar och " + hours + " timmar ";
+
+                  // If the count down is over, write some text 
+                  if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("timer1").innerHTML = " 0 dagar ";
+                  }
+                }, 1000);
+                </script>        
+        
+        <div id="page-wrapper">
 
 			<!-- Header -->
 				<section id="header" class="wrapper">
@@ -45,10 +76,11 @@
 										<h2>OSA innan 3/30<br class="mobile-hide" />
 										</h2>
 										<p>Om inget formulär visas nedan kan ni använda följande länk:
-                                        <a  href="https://forms.gle/eg7AVYaC2fjYFSFa8">Anmälan: Google Forms</a></p>
+                                        <a  href="https://forms.gle/eg7AVYaC2fjYFSFa8">Anmälan: Google Forms</a> 
+                                         <br>Det återstår <b  id="timer1"> Nedräkning</b> tills anmälan stänger.</p>
 									</header>
                                  	</article>   
-									<iframe id="GoogleForm" src="https://docs.google.com/forms/d/e/1FAIpQLSezX619htsFEXbymBk18dfYcWj34QEM0PraNhdMhMxjc5d6ig/viewform?embedded=true" width="640" height="800" frameborder="0" marginheight="0" marginwidth="0">Läser in …</iframe>
+									<iframe id="GoogleForm" src="https://docs.google.com/forms/d/e/1FAIpQLSezX619htsFEXbymBk18dfYcWj34QEM0PraNhdMhMxjc5d6ig/viewform?embedded=true" width="640" height="1000" frameborder="0" marginheight="0" marginwidth="0">Läser in …</iframe>
 							
 							</div>
 
@@ -56,61 +88,6 @@
 				</div>
 
 
-							<div class="col-6 col-12-medium">
-
-								<!-- Contact -->
-									<section class="feature-list small">
-										<div class="row">
-											<div class="col-6 col-12-small">
-												<section>
-													<h3 class="icon solid fa-home">Mailing Address</h3>
-													<p>
-														Untitled Corp<br />
-														1234 Somewhere Rd<br />
-														Nashville, TN 00000
-													</p>
-												</section>
-											</div>
-											<div class="col-6 col-12-small">
-												<section>
-													<h3 class="icon solid fa-comment">Social</h3>
-													<p>
-														<a href="#">@untitled-corp</a><br />
-														<a href="#">linkedin.com/untitled</a><br />
-														<a href="#">facebook.com/untitled</a>
-													</p>
-												</section>
-											</div>
-											<div class="col-6 col-12-small">
-												<section>
-													<h3 class="icon solid fa-envelope">Email</h3>
-													<p>
-														<a href="#">info@untitled.tld</a>
-													</p>
-												</section>
-											</div>
-											<div class="col-6 col-12-small">
-												<section>
-													<h3 class="icon solid fa-phone">Phone</h3>
-													<p>
-														(000) 555-0000
-													</p>
-												</section>
-											</div>
-										</div>
-									</section>
-
-							</div>
-						</div>
-						<div id="copyright">
-							<ul>
-								<li>&copy; Untitled.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</div>
-				</section>
-
-		</div>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
