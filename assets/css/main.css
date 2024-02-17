@@ -3050,3 +3050,8 @@ img.responsive-image {
     width: 100vw; /* Fill full viewport width on mobile */
   }
 }
+
+
+#par {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); 
+    border: 15px solid #ffffff; /* 3px wide, red border */
