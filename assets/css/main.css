@@ -2017,10 +2017,11 @@ input, select, textarea {
 			}
 
 		.wrapper.style1 {
-            background: url("images/over-bg.png"),
+            background: url("images/over-bg.png"),url("images/over-bg2.png"),
                 url("images/overlay.png"),rgb(150, 173, 104,0.5); 
-                background-repeat: repeat-x, repeat;
-                background-size: 900px,20%;
+                background-repeat: repeat-x,repeat-x, repeat;
+                background-size: 1100px,1100px,200px;
+            background-position: top,bottom,top;
 			color: #eee;
 			color: rgba(255, 255, 255, 0.75);
 		}
@@ -2029,7 +2030,8 @@ input, select, textarea {
                 background: url("images/over-bg.png"),
                 url("images/overlay.png"),rgb(201, 211, 175); 
                 background-repeat: repeat-x, repeat;
-                background-size: 900px,60%;
+          background-size: 1500px,200px;
+            background-position: top,top;
 				color: #fff;
 			}
 
