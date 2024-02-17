@@ -2017,13 +2017,19 @@ input, select, textarea {
 			}
 
 		.wrapper.style1 {
-			background: #4f612d8f url("images/overlay.png");
+        background: url("images/over-bg.png"),
+                url("images/overlay.png"),rgba(32, 55, 11, 0.48); 
+            background-repeat: repeat-x, repeat;
+        background-size: 60%,50%;
+                background-position: top left, center; 
 			color: #eee;
 			color: rgba(255, 255, 255, 0.75);
 		}
 
 			.wrapper.style1 .title {
-				background: #9ba588 url("images/overlay.png");
+            background: #4f612d8f url("images/over-bg.png");
+            background-repeat: repeat-x;
+            background-size: 60%;
 				color: #fff;
 			}
 
@@ -2445,7 +2451,7 @@ input, select, textarea {
 		/* Basic */
 
 			body, input, select, textarea {
-				font-size: 11pt;
+				font-size: 13pt;
 				line-height: 1.5em;
 				letter-spacing: 0.015em;
 			}
@@ -2769,7 +2775,7 @@ input, select, textarea {
 
 			body, input, select, textarea {
 				line-height: 1.5em;
-				font-size: 10.5pt;
+				font-size: 12.5pt;
 				letter-spacing: 0;
 			}
 
