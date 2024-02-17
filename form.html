@@ -17,25 +17,25 @@
 
 	<script>
 		// Set the date we're counting down to
-		var countDownDate = new Date("Mars 20, 2024 14:00:00").getTime();
+		var countDownDate2 = new Date("April 14, 2024 14:00:00").getTime();
 
 		// Update the count down every 1 second
 		var x = setInterval(function () {
 
 			// Get today's date and time
-			var now = new Date().getTime();
+			var now1 = new Date().getTime();
 
 			// Find the distance between now and the count down date
-			var distance = countDownDate - now;
+			var distance1 = countDownDate2 - now1;
 
 			// Time calculations for days, hours, minutes and seconds
-			var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-			var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-			var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+			var days1 = Math.floor(distance1 / (1000 * 60 * 60 * 24));
+			var hours1 = Math.floor((distance1 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			var minutes1 = Math.floor((distance1 % (1000 * 60 * 60)) / (1000 * 60));
+			var seconds1 = Math.floor((distance1 % (1000 * 60)) / 1000);
 
 			// Output the result in an element with id="demo"
-			document.getElementById("timer1").innerHTML = days + " dagar och " + hours + " timmar ";
+			document.getElementById("timer1").innerHTML = days1 + " dagar och " + hours1 + " timmar ";
 
 			// If the count down is over, write some text 
 			if (distance < 0) {
@@ -75,7 +75,7 @@
 				<div id="content">
 					<article class="box post">
 						<header class="style1">
-							<h2>OSA innan 3/30<br class="mobile-hide" />
+							<h2>OSA innan 14 april<br class="mobile-hide" />
 							</h2>
 							<p>Om inget formulär visas nedan kan ni använda följande länk:
 								<a href="https://forms.gle/eg7AVYaC2fjYFSFa8">Anmälan: Google Forms</a>
