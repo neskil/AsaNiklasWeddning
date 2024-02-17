@@ -1687,7 +1687,7 @@ input, select, textarea {
 		input[type="reset"].style1,
 		button.style1,
 		.button.style1 {
-			background: #e97770 url("images/overlay.png");
+			background: rgb(106, 112, 92) url("images/overlay.png");
 			color: #fff;
 		}
 
@@ -1865,7 +1865,7 @@ input, select, textarea {
 		}
 
 		.feature-list h3 {
-			color: #e97770 !important;
+			color: #535848 !important;
 			margin: -0.35em 0 0.75em 0;
 			font-size: 1.15em;
 			letter-spacing: 0.05em;
@@ -1873,7 +1873,7 @@ input, select, textarea {
 
 			.feature-list h3:before {
 				display: block;
-				color: #313527;
+				color: #535848;
 				background: rgba(255, 255, 255, 0.12) url("images/overlay.png");
 				border-radius: 2.5em;
 				text-align: center;
@@ -2277,7 +2277,7 @@ input, select, textarea {
 	}
 
 		#highlights .highlight h3 {
-			color: #e97770;
+			color: #535848;
 			margin: 0 0 0.75em 0;
 			font-size: 1.15em;
 			letter-spacing: 0.05em;
