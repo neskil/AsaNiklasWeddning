@@ -1,0 +1,226 @@
+<!DOCTYPE HTML>
+<!--
+	Escape Velocity by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Gåvoregister Åsa &amp; Niklas Bröllop</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+    
+        
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+    
+</head>
+
+<body class="no-sidebar is-preload">
+
+
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<section id="header" class="wrapper">
+
+			<!-- Logo -->		<!-- Logo -->
+			<div id="logo">
+				<h1 ><a href="index.html" id=test1>Vi ska gifta oss!</a></h1>
+				<p id="test2" class="important-text">Välkomna att fira med oss på Villa Soludden den 11:e maj!</p>
+			</div>
+
+			<!-- Nav -->
+			<nav id="nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="form2.html">Anmälan / OSA</a></li>
+					<li class="current"><a href="gifts.html">Gåvoregister</a></li>
+				</ul>
+			</nav>
+
+		</section>
+
+		<!-- Main -->
+		<div id="main" class="wrapper style2">
+			<div class="title"><h3 class="icon solid fa-gift" style="color:rgb(39, 42, 51)">  Bröllopsgåvor</h3></div>
+			<div class="container">
+
+
+        
+
+        <div class="col-4 col-12-medium">
+
+
+        <p style="color:rgb(39, 42, 51)">Att ni väljer att dela vår stora dag med oss är den gåva vi värderar högst. Om ni önskar ge en gåva, skulle ett bidrag till vår bröllopsresa glädja oss mycket - där siktet är inställt på att vara "big in Japan"! För dem som önskar bidra till det är mamma Lotta tillgänglig för att ta emot eventuella bidrag. Ett alternativ vi också skulle uppskatta är någon typ av upplevelse, gärna en vi kan dela med er. Om ni skulle föredra att ge oss en fysisk gåva har vi, på populär begäran, sammansställt en inspirationslista nedan.
+        </p>
+        <br>
+                            
+
+                           
+        </div>
+			</div>
+
+    
+<div class="container">
+    <ul class="gift-list">
+        <li>
+            <div class="gift-image">
+                <img src="images/g1.jpg" alt="Item 1">
+            </div>
+            <span>Zwiesel Alloro Champagnegla</span>
+               </li>
+        <li>
+            <div class="gift-image">
+                <img src="images/g3.jpg" alt="Item 2">
+            </div>
+            <span>Reijmyre stor kanna grön</span>
+        </li>
+        <li>
+            <div class="gift-image">
+                <img src="images/g2.webp" alt="Item 3">
+            </div>
+            <span>RIEDEL Veritas Old World Pinot Noir</span>
+        </li> 
+               <li>
+            <div class="gift-image">
+                <img src="images/g4.jpg" alt="Item 3">
+            </div>
+            <span>Sissi Westerberg Ljusstake Flow</span>
+        </li>
+         <li>
+            <div class="gift-image">
+                <img src="images/g5.webp" alt="Item 3">
+            </div>
+            <span>Sigurd Persson Kammarljusstake</span>
+        </li>
+                 <li>
+            <div class="gift-image">
+                <img src="images/g6.webp" alt="Item 3">
+            </div>
+            <span>Gräddsifon</span>
+        </li>
+
+         <li>
+            <div class="gift-image">
+                <img src="images/g8.jpg" alt="Item 3">
+            </div>
+            <span>Röd Ferrari</span>
+        </li>
+              <li>
+            <div class="gift-image">
+                <img src="images/g10.webp" alt="Item 3">
+            </div>
+            <span>Skärbräda</span>
+        </li>
+
+          
+        
+    </ul>
+</div>  
+                
+                
+             
+		</div>
+        	</div>
+        	
+    
+        
+            
+        
+        
+		<!-- Footer -->
+		<section id="footer" class="wrapper">
+	
+
+				<div id="copyright">
+					<ul>
+						<li>&copy; Niklas &amp; Åsa Designbyrå AB</li>
+						<li>Template: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+        
+		
+		</section>    
+    
+    
+        
+        
+        <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var ul = document.querySelector('.gift-list');
+        for (var i = ul.children.length; i >= 0; i--) {
+            ul.appendChild(ul.children[Math.random() * i | 0]);
+        }
+    });
+    </script>
+
+
+
+    <div id="imageModal" style="display:none;">
+    <span id="closeModal" style="cursor:pointer;">&times;</span>
+    <img id="modalContent" style="width: 80%; height: auto; max-height: 80%;">
+    <div id="caption"></div>
+</div>
+
+        
+        
+        
+        
+        
+  <script>
+document.addEventListener("DOMContentLoaded", function() {
+    var images = document.querySelectorAll('.gift-image img');
+    var modal = document.getElementById('imageModal');
+    var modalImg = document.getElementById('modalContent');
+    var closeModal = document.getElementById('closeModal');
+
+    images.forEach(function(img) {
+        img.onclick = function(){
+            modal.style.display = "flex"; // Change to flex to center the image
+            modalImg.src = this.src;
+        }
+    });
+
+    closeModal.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // Close modal on pressing ESC key
+    document.addEventListener('keydown', function(event) {
+        if (event.key === "Escape") {
+            modal.style.display = "none";
+        }
+    });
+
+    // Close modal by clicking outside the image
+    modal.onclick = function(event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    };
+});
+</script>
+
+
+    
+
+
+
+
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -3093,3 +3093,114 @@ img.responsive-image {
   font-style: normal;
 }
 
+
+
+.gift-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns for wider screens */
+    gap: 20px; /* Space between items */
+    padding: 0px; /* Padding around the grid */
+    list-style: none; /* Remove default list styling */
+    margin: 0; /* Remove default margins */
+}
+
+.gift-list li {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    background: #fff; /* Background color */
+    /*box-shadow: 0 2px 5px rgba(0,0,0,0.1);  Subtle shadow for depth */
+}
+
+.gift-list .gift-image {
+    width: 100%; /* Container width */
+    height: 180px; /* Fixed height for image container */
+    overflow: hidden; /* Hide overflow to maintain neat appearance */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gift-list img {
+    width: auto; /* Auto width to maintain aspect ratio */
+    max-width: 100%; /* Max width to contain within the box */
+    height: 100%; /* Height to fill the container */
+    object-fit: cover; /* Cover to ensure no space is left empty, might crop */
+}
+
+/* Zig-zag effect for every 2nd item in the row */
+.gift-list li:nth-child(4n+2), .gift-list li:nth-child(4n+3) {
+    align-self: end; /* Lower alignment for staggered effect */
+}
+
+/* Responsive adjustments for mobile views */
+@media (max-width: 600px) {
+    .gift-list {
+        grid-template-columns: 1fr; /* One column for narrow screens */
+        gap: 10px; /* Reduced gap for compact layout */
+        padding: 10px; /* Less padding for tighter spaces */
+    }
+
+    .gift-list li {
+        flex-direction: column; /* Maintain vertical layout */
+    }
+
+    .gift-list .gift-image {
+        width: 100%; /* Full width in mobile view */
+        height: 150px; /* Adjusted height for mobile */
+    }
+
+    .gift-list img {
+        object-fit: contain; /* Change to contain to see full image without crop */
+    }
+
+    /* Remove zig-zag effect on mobile */
+    .gift-list li:nth-child(4n+2), .gift-list li:nth-child(4n+3) {
+        align-self: auto;
+    }
+}
+
+
+#imageModal {
+    position: fixed;
+    z-index: 1; /* Sit on top of the page */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px; /* Padding to avoid touching the viewport edges */
+}
+
+#modalContent {
+    max-width: 80%; /* Maximum width to cover horizontally */
+    max-height: 80%; /* Maximum height to cover vertically */
+    width: auto; /* Auto width to maintain aspect ratio */
+    height: auto; /* Auto height to maintain aspect ratio */
+    display: block; /* Correctly displays the image block */
+    object-fit: contain; /* Ensures image is fully visible, might not fill the max settings if aspect ratio doesn't match */
+}
+
+#closeModal {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#closeModal:hover,
+#closeModal:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
